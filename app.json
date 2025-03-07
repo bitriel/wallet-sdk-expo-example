@@ -3,7 +3,6 @@
     "name": "bitriel-wallet",
     "slug": "bitriel-wallet",
     "version": "1.0.0",
-
     "scheme": "bitriel-wallet",
     "web": {
       "bundler": "metro",
@@ -17,19 +16,22 @@
         {
           "launchMode": "most-recent"
         }
+      ],
+      "expo-secure-store",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera"
+        }
       ]
     ],
     "experiments": {
       "typedRoutes": true,
-
       "tsconfigPaths": true
     },
-
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-
     "userInterfaceStyle": "automatic",
-
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -37,7 +39,8 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sokunsamnang.bitriel-wallet"
     },
     "android": {
       "adaptiveIcon": {
